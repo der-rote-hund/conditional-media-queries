@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]> <html lang="de" class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 8]> <html lang="de" class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="de" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Conditional Media Queries Demo</title>
+	<meta name="viewport" content="width=device-width">
+
+<!-- Stylesheets without Media Queries for IE 8 and below -->
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" media="all" href="css/styles-mqoff.css">
+	<![endif]-->
+<!-- Stylesheets with Media Queries for modern browsers -->
+	<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" media="only screen and (color)" href="css/styles.css">
+	<!--<![endif]-->
+
+	</head>
+	<body>
+
+		<h1>Conditional Media Queries Demo</h1>
+		<p>
+			In browsers that support media queries, this document's body should change colours when the window is resized.
+			In Internet Explorer 8-, the body should always be <span style="background-color: white; color: #85144b; padding: 0 1em;">marroon</span>.
+		</p>
+
+	</body>
+</html>

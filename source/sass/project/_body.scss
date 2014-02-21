@@ -1,0 +1,24 @@
+body {
+	background-color: #ffdc00;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+
+@include media-query(sm) {
+	body {
+		background-color: #ff851b;
+	}
+}
+
+@include media-query(md) {
+	body {
+		background-color: #ff4136;
+	}
+}
+
+@include media-query(lg) {
+	body {
+		background-color: #85144b;
+	}
+}

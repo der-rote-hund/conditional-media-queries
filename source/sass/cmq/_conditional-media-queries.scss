@@ -1,0 +1,36 @@
+//
+// Conditional Media Queries
+//
+// You can adjust media query names and sizes below
+//
+// USAGE EXAMPLE:
+// @include media-query(md) {
+//	foo {
+//		bar: baz;
+//	}
+// }
+//
+
+@mixin media-query($media-query) {
+	// if media queries are off, return the rules without a media query
+	@if $media-queries-on == false {
+		@content
+	// if media queries are on, return the rules wrapped in a media query
+	} @else {
+		// Max-width media query for pocket-sized computers, you shouldn't normally need this one
+		@if $media-query == xs {
+			@media only screen and (max-width: 320px) { @content; }
+		}
+		@if $media-query == sm {
+			@media only screen and (min-width: 321px) { @content; }
+		}
+
+		@if $media-query == md {
+			@media only screen and (min-width: 769px) { @content; }
+		}
+
+		@if $media-query == lg {
+			@media only screen and (min-width: 1025px) { @content; }
+		}
+	}
+}
