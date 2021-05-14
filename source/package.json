@@ -2,7 +2,7 @@
   "name": "Conditional-Media-Queries",
   "version": "0.0.1",
   "devDependencies": {
-    "grunt": "~0.4.1",
+    "grunt": ">=1.3.0",
     "grunt-contrib-sass": "~0.7.1"
   }
 }
